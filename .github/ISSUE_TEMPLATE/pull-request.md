@@ -2,7 +2,7 @@
 name: Pull Request
 about: Describe this issue template's purpose here.
 title: ''
-labels: request
+labels: PR
 assignees: SIOUkoeran
 
 ---

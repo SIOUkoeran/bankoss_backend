@@ -1,0 +1,30 @@
+
+spring:
+  sql:
+    init:
+      mode: always
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bankoss?characterEncoding=UTF-8
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+
+        format_sql: true
+        show_sql: true
+    generate-ddl: false
+    defer-datasource-initialization: true
+
+  profiles:
+    include: jwt
+auth:
+  jwt:
+    secretkey: thisisbankossSecretKey
+    expireMills: 86400
+    refreshExpireMills: 259200
